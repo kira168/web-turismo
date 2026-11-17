@@ -194,9 +194,6 @@ $_SESSION['user_role']    // Rol (cliente/admin)
 - ✅ Validación de entrada
 - ✅ Protección de páginas admin
 - ✅ Escapado de salida HTML
-- ⚠️ Pendiente: CSRF tokens
-- ⚠️ Pendiente: Rate limiting
-
 ---
 
 Desarrollado con PHP puro. Sin frameworks externos.
