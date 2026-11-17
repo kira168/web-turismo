@@ -1,0 +1,74 @@
+====================================================================
+           TURISMO INKAIKO - GUÍA DE TRASLADO E INSTALACIÓN
+====================================================================
+
+¡Hola! Toda la base de datos completa de este proyecto ha sido exportada
+y empaquetada dentro de esta misma carpeta para que puedas copiar todo
+el proyecto a otra computadora sin perder nada de información (usuarios,
+tours, itinerarios, hoteles, reservas, testimonios y configuraciones).
+
+--------------------------------------------------------------------
+1. ARCHIVOS DE LA BASE DE DATOS INCLUIDOS:
+--------------------------------------------------------------------
+- turismo_inkaiko.sql            (En la carpeta raíz del proyecto)
+- database/turismo_inkaiko.sql   (Copia de respaldo en la carpeta database)
+
+El archivo SQL ya contiene la instrucción automática:
+  CREATE DATABASE IF NOT EXISTS `turismo_inkaiko`;
+  USE `turismo_inkaiko`;
+Por lo que NO es necesario crear la base de datos vacía antes de importar.
+
+--------------------------------------------------------------------
+2. PASOS PARA INSTALAR EN OTRA COMPUTADORA:
+--------------------------------------------------------------------
+
+PASO 1: Copiar la carpeta
+- Copia esta carpeta completa dentro de tu servidor local (ejemplo en XAMPP):
+  C:\xampp\htdocs\turismo_inkaiko
+
+PASO 2: Iniciar Servidores
+- Abre el panel de control de XAMPP (o tu servidor local).
+- Inicia los servicios de "Apache" y "MySQL".
+
+PASO 3: Importar la Base de Datos en phpMyAdmin
+- Abre tu navegador web y entra a:
+  http://localhost/phpmyadmin/
+- Haz clic en la pestaña "Importar" (en el menú superior).
+- En "Seleccionar archivo", elige el archivo:
+  turismo_inkaiko.sql (ubicado dentro de la carpeta del proyecto).
+- Baja hasta el final y haz clic en el botón "Continuar" o "Importar".
+- ¡Listo! Se creará la base de datos "turismo_inkaiko" con todas sus tablas y datos.
+
+PASO 4: Abrir el Proyecto
+- En tu navegador, ingresa a:
+  http://localhost/turismo_inkaiko/
+  (O si usas el servidor de desarrollo de PHP: php -S 0.0.0.0:8080)
+
+--------------------------------------------------------------------
+3. CONFIGURACIÓN DE CONEXIÓN (SI TU MYSQL TIENE CONTRASEÑA DIFERENTE):
+--------------------------------------------------------------------
+El archivo de conexión está en:
+  includes/config.php
+
+Por defecto viene configurado para XAMPP:
+  'host'    => '127.0.0.1',
+  'dbname'  => 'turismo_inkaiko',
+  'user'    => 'root',
+  'pass'    => '',
+  'charset' => 'utf8mb4'
+
+Si en la otra PC tu MySQL tiene contraseña de root, cámbiala en ese archivo.
+
+--------------------------------------------------------------------
+4. CUENTAS DE ADMINISTRADOR REGISTRADAS:
+--------------------------------------------------------------------
+- Correo: nuvk168@gmail.com
+  Contraseña: admin123
+  Rol: Administrador
+
+- Correo: counter4@turismoinkaiko.net
+  Rol: Administrador
+
+- Correo: cljenny738@gmail.com
+  Rol: Administrador
+====================================================================

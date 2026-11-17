@@ -1,0 +1,7 @@
+vendor/
+logs/
+*.log
+*.tar
+*.zip
+cgi-bin/
+.env
